@@ -4,7 +4,7 @@
 
 通过v-model和{{}}来双向绑定数据
 
-利用v-on绑定给元素节点绑定事件并添加MyVue实例medthods中相应的方法
+利用v-on绑定给元素节点绑定事件并添加MyVue实例methods中相应的方法
 
 整体采用数据劫持结合发布订阅模式，通过Object.defineProperty()来劫持各个属性的getter,setter, 在数据变动时发布消息给订阅者，触发相应的回调函数，从而实现数据双向绑定。
 
